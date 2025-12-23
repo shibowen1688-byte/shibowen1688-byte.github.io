@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>普高达国际商城 - 尊享生活体验中心</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i> 普高达国际商城
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#entrepreneurs" class="nav-link">企业家俱乐部</a></li>
+                <li><a href="#health" class="nav-link">大健康产品</a></li>
+                <li><a href="#seafood" class="nav-link">海珍品展厅</a></li>
+                <li><a href="#mojia" class="nav-link">墨客小院</a></li>
+                <li><a href="#medical" class="nav-link">医疗中心</a></li>
+                <li><a href="#heritage" class="nav-link">非遗中心</a></li>
+                <li><a href="#platinum" class="nav-link">白金卡</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-carousel">
+            <div class="carousel-slide active" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">普高达国际商城</h1>
+                    <p class="hero-subtitle">尊享生活体验中心</p>
+                    <p class="hero-description">汇聚东北亚精品，打造健康生活新境界</p>
+                    <button class="cta-button">开始探索</button>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">大健康产品展厅</h1>
+                    <p class="hero-subtitle">精选全球顶级健康产品</p>
+                    <p class="hero-description">高丽参、吉林人参等珍贵补品</p>
+                    <button class="cta-button">了解更多</button>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">海珍品展厅</h1>
+                    <p class="hero-subtitle">优选海洋瑰宝</p>
+                    <p class="hero-description">东北三省精选海珍品与山珍品</p>
+                    <button class="cta-button">品味美食</button>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">墨客小院</h1>
+                    <p class="hero-subtitle">文化艺术中心</p>
+                    <p class="hero-description">九宫格创意项目，传统与现代融合</p>
+                    <button class="cta-button">探索文化</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-prev">&lt;</button>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+            </div>
+            <button class="carousel-next">&gt;</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- 展厅导航 Grid -->
+    <section id="showcases" class="showcases-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">✨</span>
+                体验中心导览
+                <span class="title-icon">✨</span>
+            </h2>
+            <p class="section-subtitle">探索我们的特色展厅和服务</p>
+            
+            <div class="showcases-grid">
+                <!-- 大健康产品展厅 -->
+                <div class="showcase-card" onclick="scrollToSection('health')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image health-bg">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>东北亚大健康产品展厅</h3>
+                        <p>精选健康产品，呵护您的生活</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 海珍品展厅 -->
+                <div class="showcase-card" onclick="scrollToSection('seafood')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image seafood-bg">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>东北三省海珍品展厅</h3>
+                        <p>优选海洋瑰宝，尽享顶级美味</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 山珍品展厅 -->
+                <div class="showcase-card" onclick="scrollToSection('seafood')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image mountain-bg">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>山珍品展厅</h3>
+                        <p>珍稀山产，品味自然精粹</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 墨客小院 -->
+                <div class="showcase-card" onclick="scrollToSection('mojia')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image mojia-bg">
+                            <i class="fas fa-pagelines"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>墨客小院</h3>
+                        <p>九宫格创意项目，文化与艺术融合</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 生命健康国际医疗中心 -->
+                <div class="showcase-card" onclick="scrollToSection('medical')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image medical-bg">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>生命健康国际医疗中心</h3>
+                        <p>尖端医疗技术，守护生命健康</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 非遗创作中心 -->
+                <div class="showcase-card" onclick="scrollToSection('heritage')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image heritage-bg">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>东北亚世界非遗创作中心</h3>
+                        <p>传承文化瑰宝，展现非遗魅力</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- 白金卡 -->
+                <div class="showcase-card premium" onclick="scrollToSection('platinum')">
+                    <div class="card-image-wrapper">
+                        <div class="card-image platinum-bg">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>普高达白金卡</h3>
+                        <p>尊贵身份象征，专享豪华权益</p>
+                        <span class="card-arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企业家俱乐部 -->
+    <section id="entrepreneurs" class="entrepreneurs-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🌍</span>
+                企业家俱乐部
+                <span class="title-icon">🌍</span>
+            </h2>
+            <p class="section-subtitle">连接全球企业家，共创美好未来</p>
+            
+            <div class="regions-grid">
+                <!-- 东北亚 -->
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="region-overlay"></div>
+                        <div class="region-flag">
+                            <img src="https://flagpedia.net/data/flags/w40/jp.webp" alt="日本国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/kr.webp" alt="韩国国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/cn.webp" alt="中国国旗" width="24" height="18">
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <h3>东北亚</h3>
+                        <p>连接中国、日本、韩国等东北亚国家的企业家资源</p>
+                        <div class="region-highlights">
+                            <span>东京塔</span>
+                            <span>首尔塔</span>
+                            <span>长城</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 东盟 -->
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="region-overlay"></div>
+                        <div class="region-flag">
+                            <img src="https://flagpedia.net/data/flags/w40/sg.webp" alt="新加坡国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/th.webp" alt="泰国国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/id.webp" alt="印尼国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/my.webp" alt="马来西亚国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/ph.webp" alt="菲律宾国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/vn.webp" alt="越南国旗" width="24" height="18">
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <h3>东盟</h3>
+                        <p>涵盖新加坡、泰国、印尼、马来西亚等东盟国家的商业合作</p>
+                        <div class="region-highlights">
+                            <span>鱼尾狮</span>
+                            <span>泰姬陵</span>
+                            <span>婆罗浮屠</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中东 -->
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="region-overlay"></div>
+                        <div class="region-flag">
+                            <img src="https://flagpedia.net/data/flags/w40/ae.webp" alt="阿联酋国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/sa.webp" alt="沙特国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/qa.webp" alt="卡塔尔国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/tr.webp" alt="土耳其国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/il.webp" alt="以色列国旗" width="24" height="18">
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <h3>中东</h3>
+                        <p>连接阿联酋、沙特、卡塔尔等中东地区的商业机遇</p>
+                        <div class="region-highlights">
+                            <span>帆船酒店</span>
+                            <span>麦加大清真寺</span>
+                            <span>死海</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 欧洲 -->
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="region-overlay"></div>
+                        <div class="region-flag">
+                            <img src="https://flagpedia.net/data/flags/w40/fr.webp" alt="法国国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/de.webp" alt="德国国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/gb.webp" alt="英国国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/it.webp" alt="意大利国旗" width="24" height="18">
+                            <img src="https://flagpedia.net/data/flags/w40/es.webp" alt="西班牙国旗" width="24" height="18">
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <h3>欧洲</h3>
+                        <p>涵盖法国、德国、英国、意大利等欧洲国家的企业家网络</p>
+                        <div class="region-highlights">
+                            <span>埃菲尔铁塔</span>
+                            <span>大英博物馆</span>
+                            <span>斗兽场</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 美国 -->
+                <div class="region-card">
+                    <div class="region-image" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="region-overlay"></div>
+                        <div class="region-flag">
+                            <img src="https://flagpedia.net/data/flags/w40/us.webp" alt="美国国旗" width="24" height="18">
+                        </div>
+                    </div>
+                    <div class="region-content">
+                        <h3>美国</h3>
+                        <p>连接美国东西两岸的商业领袖和创新企业</p>
+                        <div class="region-highlights">
+                            <span>自由女神像</span>
+                            <span>金门大桥</span>
+                            <span>大峡谷</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 大健康产品展厅 -->
+    <section id="health" class="showcase-detail health-detail">
+        <div class="container">
+            <h2 class="section-title">东北亚大健康产品展厅</h2>
+            <div class="detail-grid">
+                <div class="detail-image">
+                    <div class="product-carousel">
+                        <div class="carousel-item">🌿</div>
+                        <div class="carousel-item">💊</div>
+                        <div class="carousel-item">🧘</div>
+                    </div>
+                </div>
+                <div class="detail-content">
+                    <h3>精选全球顶级健康产品</h3>
+                    <p>我们精心甄选东北亚地区最优质的健康产品，包括：</p>
+                    <ul class="product-list">
+                        <li><span class="check">✓</span> 高丽参、吉林人参等珍贵补品</li>
+                        <li><span class="check">✓</span> 有机保健食品和营养品</li>
+                        <li><span class="check">✓</span> 天然植物提取精华</li>
+                        <li><span class="check">✓</span> 专业健康管理咨询服务</li>
+                        <li><span class="check">✓</span> 定制化健康方案</li>
+                    </ul>
+                    <button class="explore-button">了解更多</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 海珍品展厅 -->
+    <section id="seafood" class="showcase-detail seafood-detail">
+        <div class="container">
+            <h2 class="section-title">海珍品 & 山珍品展厅</h2>
+            <div class="products-showcase">
+                <div class="product-item">
+                    <div class="product-image seafood-item-1">
+                        <span class="product-icon">🦐</span>
+                    </div>
+                    <h4>海参</h4>
+                    <p>营养丰富，滋补圣品</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-image seafood-item-2">
+                        <span class="product-icon">🦞</span>
+                    </div>
+                    <h4>龙虾</h4>
+                    <p>鲜活优质，美味享受</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-image seafood-item-3">
+                        <span class="product-icon">🍄</span>
+                    </div>
+                    <h4>野生蘑菇</h4>
+                    <p>山林珍品，天然美食</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-image seafood-item-4">
+                        <span class="product-icon">🦅</span>
+                    </div>
+                    <h4>高档食材</h4>
+                    <p>精选稀有，品味非凡</p>
+                </div>
+            </div>
+            <div class="detail-content">
+                <h3>东北三省精选</h3>
+                <p>汇聚吉林、辽宁、黑龙江三省最优质的海珍品和山珍品。每一件产品都经过严格的质量检测，确保新鲜度和营养价值。我们与本地优质供应商直接合作，为您呈现最原汁原味的东北特产。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 墨客小院 -->
+    <section id="mojia" class="showcase-detail mojia-detail">
+        <div class="container">
+            <h2 class="section-title">墨客小院 · 九宫格项目</h2>
+            <div class="nine-grid">
+                <div class="grid-item grid-item-1">
+                    <div class="grid-icon">🎨</div>
+                    <h4>书法艺术</h4>
+                    <p>传统笔墨艺术展示与创作</p>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <div class="grid-icon">🖼️</div>
+                    <h4>绘画展览</h4>
+                    <p>当代与传统绘画精品</p>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <div class="grid-icon">🧩</div>
+                    <h4>文创产品</h4>
+                    <p>艺术文创商品展销</p>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <div class="grid-icon">☕</div>
+                    <h4>雅集空间</h4>
+                    <p>品茶论艺雅集活动</p>
+                </div>
+                <div class="grid-item grid-item-5 grid-center">
+                    <div class="grid-icon">✨</div>
+                    <h4>墨客小院</h4>
+                    <p>文化艺术中心</p>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <div class="grid-icon">📚</div>
+                    <h4>文献库</h4>
+                    <p>珍稀书籍文献收藏</p>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <div class="grid-icon">🎭</div>
+                    <h4>表演艺术</h4>
+                    <p>传统戏曲文化展演</p>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <div class="grid-icon">🏺</div>
+                    <h4>古玩鉴赏</h4>
+                    <p>精品古玩展示与鉴赏</p>
+                </div>
+                <div class="grid-item grid-item-9">
+                    <div class="grid-icon">🌸</div>
+                    <h4>花艺陈设</h4>
+                    <p>花卉艺术装置展览</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生命健康国际医疗中心 -->
+    <section id="medical" class="showcase-detail medical-detail">
+        <div class="container">
+            <h2 class="section-title">生命健康国际医疗中心</h2>
+            <div class="medical-services">
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h4>综合检查</h4>
+                    <p>国际标准体检项目，全面评估身体状况</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨‍⚕️</div>
+                    <h4>专家咨询</h4>
+                    <p>国际顶级医学专家坐诊指导</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h4>先进诊疗</h4>
+                    <p>采用最新医疗技术和治疗方案</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💉</div>
+                    <h4>预防保健</h4>
+                    <p>个性化健康管理和疾病预防计划</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧬</div>
+                    <h4>基因检测</h4>
+                    <p>精准医学基因检测与分析</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h4>国际合作</h4>
+                    <p>与全球顶级医疗机构合作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 非遗创作中心 -->
+    <section id="heritage" class="showcase-detail heritage-detail">
+        <div class="container">
+            <h2 class="section-title">东北亚世界非遗创作中心</h2>
+            <div class="heritage-grid">
+                <div class="heritage-item">
+                    <div class="heritage-icon">🪡</div>
+                    <h3>传统手工艺</h3>
+                    <p>传承非遗技艺，展现手工之美</p>
+                </div>
+                <div class="heritage-item">
+                    <div class="heritage-icon">🎪</div>
+                    <h3>民俗文化</h3>
+                    <p>东北亚民族文化展示与体验</p>
+                </div>
+                <div class="heritage-item">
+                    <div class="heritage-icon">🥁</div>
+                    <h3>传统音乐</h3>
+                    <p>民族音乐展演与学习</p>
+                </div>
+                <div class="heritage-item">
+                    <div class="heritage-icon">🎬</div>
+                    <h3>文化创意</h3>
+                    <p>非遗创新创意产品开发</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 白金卡 -->
+    <section id="platinum" class="showcase-detail platinum-detail">
+        <div class="container">
+            <h2 class="section-title">普高达白金卡</h2>
+            <p class="section-subtitle">尊贵身份 · 专享权益</p>
+            <div class="platinum-card-showcase">
+                <div class="platinum-card-visual">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="card-header">普高达</div>
+                            <div class="card-title">PLATINUM CARD</div>
+                            <div class="card-number">●●●● ●●●● ●●●● ●●●●</div>
+                            <div class="card-footer">
+                                <span>VALID THRU</span>
+                                <span>12/28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="platinum-benefits">
+                    <h3>白金卡权益</h3>
+                    <ul class="benefits-list">
+                        <li><span class="benefit-icon">⭐</span> 所有展厅VIP通道优先权</li>
+                        <li><span class="benefit-icon">🎁</span> 每年2次特家礼物赠送</li>
+                        <li><span class="benefit-icon">🏆</span> 医疗中心年度免费体检</li>
+                        <li><span class="benefit-icon">📚</span> 墨客小院会员活动邀请</li>
+                        <li><span class="benefit-icon">🍽️</span> 美食展厅专享折扣（8折）</li>
+                        <li><span class="benefit-icon">🎫</span> 独家文化活动优先购票</li>
+                        <li><span class="benefit-icon">💎</span> 专属客户经理服务</li>
+                        <li><span class="benefit-icon">🌟</span> 积分双倍累计与兑换</li>
+                    </ul>
+                    <button class="apply-button">申请白金卡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h4>地址</h4>
+                    <p>东北亚商业中心<br>普高达国际商城总部</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>电话</h4>
+                    <p>0411-888-8888<br>工作时间 9:00-18:00</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h4>邮箱</h4>
+                    <p>info@pogoda.com<br>service@pogoda.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <h4>社交媒体</h4>
+                    <p>微信 | 微博 | 抖音</p>
+                </div>
+            </div>
+            <div class="subscribe-form">
+                <h3>订阅我们的资讯</h3>
+                <div class="form-group">
+                    <input type="email" placeholder="请输入您的邮箱">
+                    <button class="subscribe-btn">订阅</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>关于普高达国际商城</h5>
+                    <ul>
+                        <li><a href="#">公司介绍</a></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="#">企业文化</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>展厅导览</h5>
+                    <ul>
+                        <li><a href="#health">大健康产品</a></li>
+                        <li><a href="#seafood">海珍品展厅</a></li>
+                        <li><a href="#medical">医疗中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>帮助中心</h5>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">服务协议</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>关注我们</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-wechat"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 普高达国际商城 | All Rights Reserved | 京ICP备xxxxx号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
